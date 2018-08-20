@@ -1,0 +1,10 @@
+.DS_Store?
+*.DS_Store
+Thumbs.db
+.bundle/
+yarn-error.log
+vendor/
+node_modules/
+build/
+tmp/
+.idea

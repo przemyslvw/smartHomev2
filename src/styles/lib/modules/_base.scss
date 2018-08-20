@@ -1,0 +1,38 @@
+html,
+body {
+    font: $font-size-basic $font-family-regular, $font-family-default;
+    margin: 0;
+    color: $color-fonts-basic;
+    background-color: $color-background-basic;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+}
+
+footer,
+header,
+p {
+    padding: 0 $padding-basic;
+}
+
+footer {
+    border-top: 1px solid $color-border;
+    margin-top: 50px;
+    background-color: $color-background-footer;
+    padding-bottom: 4px;
+}
+
+h1 {
+    color: $color-fonts-title;
+    font-family: $font-family-bold;
+    margin: 0
+}
+
+p {
+    color: $color-fonts-text;
+}
