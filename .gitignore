@@ -6,5 +6,10 @@ yarn-error.log
 vendor/
 node_modules/
 build/
+public/
 tmp/
 .idea
+.firebaserc
+firebase.json
+database.rules.json
+

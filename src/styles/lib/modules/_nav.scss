@@ -1,0 +1,24 @@
+.side-bar {
+    h4 {
+        padding-left: 25px;
+        font-weight: 700;
+        color: $color-fonts-basic2;
+        margin-bottom: 0px;
+    }
+    ul {
+        li {
+            padding: 5px;
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 400;
+            color: $color-fonts-basic2;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: #2b3d6460;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            // color: white
+        }
+    }
+}

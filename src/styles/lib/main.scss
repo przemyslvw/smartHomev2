@@ -1,5 +1,8 @@
 @import 'config/mixins',
-        'config/variables';
-
+'config/variables',
+'config/svg';
 @import 'modules/base';
 @import 'modules/front';
+@import 'modules/_homeComponent';
+@import 'modules/_header';
+@import 'modules/_nav';

@@ -19,19 +19,6 @@ module.exports = {
             dirAssets
         ]
     },
-
-    plugins: [
-        // HIDE/DELETE if you do not need html templates (ie. you have PHP site on nginx or apache -> then use devProxy for dev mode)
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, './src/templates/index.html'),
-            filename: 'index.html'
-        }),
-
-        new webpack.DefinePlugin({
-            IS_DEV: IS_DEV
-        })
-    ],
-
     module: {
         rules: [
             // BABEL
@@ -92,6 +79,18 @@ module.exports = {
                 }]
             }
         ]
-    }
+    },
+    plugins: [
+        // HIDE/DELETE if you do not need html templates (ie. you have PHP site on nginx or apache -> then use devProxy for dev mode)
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/templates/index.html'),
+            filename: 'index.html'
+        }),
+
+        new webpack.DefinePlugin({
+            IS_DEV: IS_DEV
+        })
+    ]
 };
+console.log("🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥");
 console.log("powered by majrin")
