@@ -131,10 +131,19 @@ p {
 }
 
 footer {
-    border-top: 1px solid $color-border;
+    text-align: center;
     margin-top: 50px;
-    background-color: $color-background-footer;
-    padding-bottom: 4px;
+    background-color: #2b3d644a;
+    padding: 0;
+    bottom: 0;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    p {
+        color: white;
+        margin: 0;
+        padding: 10px
+    }
 }
 
 h1 {
