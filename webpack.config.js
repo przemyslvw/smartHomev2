@@ -9,6 +9,16 @@ const dirApp = path.join(__dirname, 'src/scripts/lib');
 const dirAssets = path.join(__dirname, 'src/styles');
 
 module.exports = {
+    stats: {
+        // Config for minimal console.log mess.
+        assets: true,
+        colors: true,
+        version: true,
+        hash: true,
+        timings: true,
+        chunks: true,
+        chunkModules: true
+    },
     entry: {
         main: path.join(dirApp, 'main') // here you can add another entries -> anotherEntry: path.join(dirApp, 'anotherEntry')
     },
@@ -26,15 +36,16 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /(node_modules)/,
+
                 options: {
                     compact: true,
                     presets: [
                         ['env', {
                             modules: false,
                             browsers: ['ie >= 10']
-                        }], 'stage-1'
+                        }], 'stage-1', 'react'
                     ],
-                }
+                },
             },
             {
                 test: /\.html$/,
@@ -89,8 +100,16 @@ module.exports = {
 
         new webpack.DefinePlugin({
             IS_DEV: IS_DEV
-        })
+        }),
     ]
 };
-console.log("🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥");
-console.log("powered by majrin")
+
+console.log(' ');
+console.log("🔥 🔥🔥🔥🔥🔥 🔥 🔥🔥 🔥🔥 🔥  🔥🔥🔥  🔥  🔥🔥  🔥");
+console.log(' ');
+console.log("powered by przemyslvw");
+
+console.log(' ');
+// compiler.hooks.someHook.tap('eeeeeeeeeeeeelo');
+
+// options.onComplete("All good. Go drink a 🍺");

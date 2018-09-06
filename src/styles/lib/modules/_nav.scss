@@ -1,24 +1,72 @@
 .side-bar {
     h4 {
-        padding-left: 25px;
+        padding-left: 30px;
         font-weight: 700;
         color: $color-fonts-basic2;
         margin-bottom: 0px;
     }
     ul {
+        list-style: none;
+        padding-left: 0px;
+        padding-right: 20px;
         li {
             padding: 5px;
+            padding: 0 12px 0 26px;
             font-size: 14px;
             line-height: 28px;
             font-weight: 400;
             color: $color-fonts-basic2;
             cursor: pointer;
         }
+        li:before {
+            content: "⚙️ ";
+            width: 0.5em;
+            text-align: center;
+            display: inline-block;
+            color: white;
+            width: 30px;
+        }
+        &.kamery {
+            li:before {
+                content: "👁‍🗨 ";
+            }
+        }
+        &.pokoje {
+            li:nth-child(1):before {
+                content: "🚪 "
+            }
+            li:nth-child(2):before {
+                content: "🍳 "
+            }
+            li:nth-child(3):before {
+                content: "🚗 "
+            }
+            li:nth-child(4):before {
+                content: "📺 "
+            }
+            li:nth-child(5):before {
+                content: "🌺 "
+            }
+            li:nth-child(7):before {
+                content: "🛀🏻 "
+            }
+            li:nth-child(11):before {
+                content: "🛀 "
+            }
+            li:nth-child(9):before {
+                content: "🛁 "
+            }
+            li:nth-child(10):before,
+            li:nth-child(6):before,
+            li:nth-child(8):before {
+                content: "🛌 ";
+            }
+        }
         li:hover {
             background-color: #2b3d6460;
-            border-top-left-radius: 8px;
-            border-bottom-left-radius: 8px;
-            // color: white
+            border-top-right-radius: 16px;
+            border-bottom-right-radius: 16px;
+            color: white
         }
     }
 }

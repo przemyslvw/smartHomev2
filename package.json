@@ -1,5 +1,5 @@
 {
-    "name": "webpack-4-boilerplate",
+    "name": "smartHome-v2",
     "version": "1.0.0",
     "description": "",
     "main": "",
@@ -39,5 +39,13 @@
         "webpack-cli": "^2.1.3",
         "webpack-dev-server": "^3.1.4",
         "webpack-merge": "^4.1.2"
+    },
+    "dependencies": {
+        "babel-preset-react": "^6.24.1",
+        "react": "^16.3.2",
+        "react-dom": "^16.3.2",
+        "react-router-dom": "^4.3.1",
+        "react-scripts": "1.1.4",
+        "webpack-shell-plugin": "^0.5.0"
     }
 }

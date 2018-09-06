@@ -2,121 +2,148 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>@majrin smartHomev2</title>
-    <meta name="description" content="@majrin project">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta name="language" content="pl">
+	<meta charset="UTF-8">
+	<title>@majrin smartHomev2</title>
+	<meta name="description" content="@majrin project">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="language" content="pl">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.4.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.4.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.4.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.4.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.4.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+	<!-- update the version number as needed -->
+	<script defer src="/__/firebase/5.4.0/firebase-app.js"></script>
+	<!-- include only the Firebase features as you need -->
+	<script defer src="/__/firebase/5.4.0/firebase-auth.js"></script>
+	<script defer src="/__/firebase/5.4.0/firebase-database.js"></script>
+	<script defer src="/__/firebase/5.4.0/firebase-messaging.js"></script>
+	<script defer src="/__/firebase/5.4.0/firebase-storage.js"></script>
+	<!-- initialize the SDK after all desired features are loaded -->
+	<script defer src="/__/firebase/init.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyA-GDdWelECctZiIFiL9NUXABr_qyZ8Aos",
-            authDomain: "smarthomev2-fa91e.firebaseapp.com",
-            databaseURL: "https://smarthomev2-fa91e.firebaseio.com",
-            projectId: "smarthomev2-fa91e",
-            storageBucket: "smarthomev2-fa91e.appspot.com",
-            messagingSenderId: "526248482294"
-        };
-        firebase.initializeApp(config);
-    </script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyA-GDdWelECctZiIFiL9NUXABr_qyZ8Aos",
+			authDomain: "smarthomev2-fa91e.firebaseapp.com",
+			databaseURL: "https://smarthomev2-fa91e.firebaseio.com",
+			projectId: "smarthomev2-fa91e",
+			storageBucket: "smarthomev2-fa91e.appspot.com",
+			messagingSenderId: "526248482294"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <!-- <section class="load"> -->
-    <div class="loader">
+	<!-- <section class="load"> -->
+	<div class="loader">
 
-    </div>
-    </section>
+	</div>
+	</section>
 
-    <header>
-        <nav>
-            <div class="logo_space">
-                <svg style="width: 3em; color: #2b3d64;" aria-hidden="true" data-prefix="fas" data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-home fa-w-18 fa-2x">
+	<header>
+		<nav>
+			<div class="logo_space">
+				<svg style="width: 3em; color: #2b3d64;    margin-left: 55px;" aria-hidden="true" data-prefix="fas" data-icon="home"
+				 role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-home fa-w-18 fa-2x">
 					<path fill="currentColor" d="M557.1 240.7L512 203.8V104c0-4.4-3.6-8-8-8h-32c-4.4 0-8 3.6-8 8v60.5L313.4 41.1c-14.7-12.1-36-12.1-50.7 0L18.9 240.7c-3.4 2.8-3.9 7.8-1.1 11.3l20.3 24.8c2.8 3.4 7.8 3.9 11.3 1.1l14.7-12V464c0 8.8 7.2 16 16 16h168c4.4 0 8-3.6 8-8V344h64v128c0 4.4 3.6 8 8 8h168c8.8 0 16-7.2 16-16V265.8l14.7 12c3.4 2.8 8.5 2.3 11.3-1.1l20.3-24.8c2.6-3.4 2.1-8.4-1.3-11.2zM464 432h-96V304c0-4.4-3.6-8-8-8H216c-4.4 0-8 3.6-8 8v128h-96V226.5l170.9-140c2.9-2.4 7.2-2.4 10.1 0l170.9 140V432z"
-					    class=""></path>
+					 class=""></path>
 				</svg>
-                <h3>
-                    smartHome v2 [beta]
-                </h3>
-                <svg style="width: 1.7em; color: #2b3d64; margin: 13px; position: absolute; right: 0;" aria-hidden="true" data-prefix="far" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" title="Main Navigation" class="svg-inline--fa fa-bars fa-w-14 fa-fw fa-lg">
+				<h3>
+					smartHome v2 [beta]
+				</h3>
+				<svg style="width: 1.7em; color: #2b3d64; margin: 13px; position: absolute;" aria-hidden="true" data-prefix="far"
+				 data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" title="Main Navigation" class="svg-inline--fa fa-bars fa-w-14 fa-fw fa-lg">
 					<path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
-					    class=""></path>
+					 class=""></path>
 				</svg>
-            </div>
+			</div>
 
-        </nav>
+		</nav>
 
-    </header>
-    <div class="side-bar">
-        <h4>POKOJE</h4>
-        <ul>
+	</header>
+	<div class="side-bar">
+		<h4>POKOJE</h4>
+		<ul class="pokoje">
 
-            <li>Drzwi front</li>
-            <li>Kuchnia</li>
-            <li>Garaż</li>
-            <li>Salon</li>
-            <li>Ogród</li>
-            <li>Sypialnia 1</li>
-            <li>Łazienka 1</li>
-            <li>Sypialnia 2</li>
-            <li>Łazienka 2</li>
-            <li>Sypialnia kids</li>
-            <li>Łazienka kids</li>
-        </ul>
+			<li>Drzwi front</li>
+			<li>Kuchnia</li>
+			<li>Garaż</li>
+			<li>Salon</li>
+			<li>Ogród</li>
+			<li>Sypialnia 1</li>
+			<li>Łazienka 1</li>
+			<li>Sypialnia 2</li>
+			<li>Łazienka 2</li>
+			<li>Sypialnia kids</li>
+			<li>Łazienka kids</li>
+		</ul>
+		<h4>MONITORING</h4>
 
-        <footer>
-            <p>przemyslvw</p>
-        </footer>
-    </div>
-    <main class="wrapper">
-        <section>
-            <div id="space">
-                <label>
+		<ul class="kamery">
+
+			<li>Front</li>
+			<li>Ogród</li>
+			<li>Garaż</li>
+
+		</ul>
+		<h4>USTAWIENIA</h4>
+
+		<ul>
+
+			<li>Ogrzewanie</li>
+			<li>Prąd</li>
+			<li>Woda</li>
+			<li>Alarmy</li>
+			<li>Narzędzia</li>
+
+		</ul>
+
+		<div id="root">
+			react
+		</div>
+
+		<footer>
+			<p>przemyslvw</p>
+		</footer>
+	</div>
+	<main class="wrapper">
+		<section>
+			<div id="space">
+				<label>
 					<input type="checkbox" id="checkLed10"> Drzwi front</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed1"> Kuchnia
 				</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed2"> Garaż</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed3"> Salon</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed11"> Ogród</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed4"> Sypialnia 1</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed5"> Łazienka 1</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed6"> Sypialnia 2</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed7"> Łazienka 2</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed8"> Sypialnia kids</label>
-                <label>
+				<label>
 					<input type="checkbox" id="checkLed9"> Łazienka kids</label>
 
-                <label>
+				<label>
 					Notatnik
 					<input id="myTextBox" type="text" />
 				</label>
-            </div>
-            <div id="space2">
-                <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"
-                    width="800px" height="500px" viewBox="0 0 800 500" style="enable-background:new 0 0 800 500;" xml:space="preserve">
+			</div>
+			<div id="space2">
+				<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg"
+				 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"
+				 width="800px" height="500px" viewBox="0 0 800 500" style="enable-background:new 0 0 800 500;" xml:space="preserve">
 					<g>
 						<path class="st931" d="M658.3,26.2c24.7,0,49.3,0,74,0c1.9,1.9,1.8,3.6-0.8,4.5c-1.8,0.7-3,1.9-4.3,3.2c-1.8,1.9-4.2,2.7-6.3,1.3
 		c-2.6-1.8-4.3-0.2-6.3,0.8c-3.4,0.7-6.9,0.3-10.4,0.4c-1.4,0-3.3-0.4-3.7,1.6c-1.1,6.1-2.4,12.2,0.9,18.1c4.4,1.7,3.2,3.9,0.7,6.3
@@ -5253,150 +5280,150 @@
 	" />
 				</svg>
 
-            </div>
-        </section>
+			</div>
+		</section>
 
-    </main>
+	</main>
 
 
-    <script>
+	<script>
         // var db = firebase.database().ref('home').set({
         //     led1: true,
         //     led2: false
         // })
-    </script>
+	</script>
 
-    <script>
-        var db = firebase.database().ref('home');
+	<script>
+		var db = firebase.database().ref('home');
 
 
-        db.on('value', function(data) {
+		db.on('value', function (data) {
 
-            console.log("data: ", data.val());
-            $("#checkLed1").prop('checked', data.val().led1);
-            $("#checkLed2").prop('checked', data.val().led2);
-            $("#checkLed3").prop('checked', data.val().led3);
-            $("#checkLed10").prop('checked', data.val().led10);
-            $("#checkLed11").prop('checked', data.val().led11);
-            $("#myTextBox").val(data.val().text1);
-            if ($("#checkLed1").is(':checked') == true) {
-                document.getElementById("led1_polygon").classList.add("active");
-            } else {
-                document.getElementById("led1_polygon").classList.remove("active");
-            };
-            if ($("#checkLed2").is(':checked') == true) {
-                document.getElementById("led2_polygon").classList.add("active");
-            } else {
-                document.getElementById("led2_polygon").classList.remove("active");
-            };
-            if ($("#checkLed3").is(':checked') == true) {
-                document.getElementById("salon_polygon").classList.add("active");
-            } else {
-                document.getElementById("salon_polygon").classList.remove("active");
-            };
-            if ($("#checkLed10").is(':checked') == true) {
-                document.getElementById("front_polygon").classList.add("active");
-            } else {
-                document.getElementById("front_polygon").classList.remove("active");
-            };
-            if ($("#checkLed11").is(':checked') == true) {
-                document.getElementById("back_path").classList.add("active");
-            } else {
-                document.getElementById("back_path").classList.remove("active");
-            };
+			console.log("data: ", data.val());
+			$("#checkLed1").prop('checked', data.val().led1);
+			$("#checkLed2").prop('checked', data.val().led2);
+			$("#checkLed3").prop('checked', data.val().led3);
+			$("#checkLed10").prop('checked', data.val().led10);
+			$("#checkLed11").prop('checked', data.val().led11);
+			$("#myTextBox").val(data.val().text1);
+			if ($("#checkLed1").is(':checked') == true) {
+				document.getElementById("led1_polygon").classList.add("active");
+			} else {
+				document.getElementById("led1_polygon").classList.remove("active");
+			};
+			if ($("#checkLed2").is(':checked') == true) {
+				document.getElementById("led2_polygon").classList.add("active");
+			} else {
+				document.getElementById("led2_polygon").classList.remove("active");
+			};
+			if ($("#checkLed3").is(':checked') == true) {
+				document.getElementById("salon_polygon").classList.add("active");
+			} else {
+				document.getElementById("salon_polygon").classList.remove("active");
+			};
+			if ($("#checkLed10").is(':checked') == true) {
+				document.getElementById("front_polygon").classList.add("active");
+			} else {
+				document.getElementById("front_polygon").classList.remove("active");
+			};
+			if ($("#checkLed11").is(':checked') == true) {
+				document.getElementById("back_path").classList.add("active");
+			} else {
+				document.getElementById("back_path").classList.remove("active");
+			};
 
-        })
-        $("#checkLed1" || "led1_polygon").click(function() {
-            var zmiana = $(this).is(':checked');
+		})
+		$("#checkLed1" || "led1_polygon").click(function () {
+			var zmiana = $(this).is(':checked');
 
-            if (zmiana) {
-                db.update({
-                    led1: true
-                });
-                document.getElementById("led1_polygon").classList.add("active");
+			if (zmiana) {
+				db.update({
+					led1: true
+				});
+				document.getElementById("led1_polygon").classList.add("active");
 
-            } else {
-                db.update({
-                    led1: false
-                });
-                document.getElementById("led1_polygon").classList.remove("active");
-            }
+			} else {
+				db.update({
+					led1: false
+				});
+				document.getElementById("led1_polygon").classList.remove("active");
+			}
 
-        });
-        $("#checkLed2").click(function() {
+		});
+		$("#checkLed2").click(function () {
 
-            var zmiana2 = $(this).is(':checked');
-            if (zmiana2) {
-                db.update({
-                    led2: true
-                });
-                document.getElementById("led2_polygon").classList.add("active");
-            } else {
-                db.update({
-                    led2: false
-                });
-                document.getElementById("led2_polygon").classList.remove("active");
-            }
+			var zmiana2 = $(this).is(':checked');
+			if (zmiana2) {
+				db.update({
+					led2: true
+				});
+				document.getElementById("led2_polygon").classList.add("active");
+			} else {
+				db.update({
+					led2: false
+				});
+				document.getElementById("led2_polygon").classList.remove("active");
+			}
 
-        });
-        $("#checkLed3").click(function() {
+		});
+		$("#checkLed3").click(function () {
 
-            var zmiana2 = $(this).is(':checked');
-            if (zmiana2) {
-                db.update({
-                    led3: true
-                });
-                document.getElementById("salon_polygon").classList.add("active");
-            } else {
-                db.update({
-                    led3: false
-                });
-                document.getElementById("salon_polygon").classList.remove("active");
-            }
+			var zmiana2 = $(this).is(':checked');
+			if (zmiana2) {
+				db.update({
+					led3: true
+				});
+				document.getElementById("salon_polygon").classList.add("active");
+			} else {
+				db.update({
+					led3: false
+				});
+				document.getElementById("salon_polygon").classList.remove("active");
+			}
 
-        });
-        $("#checkLed10" || "#front_polygon").click(function() {
-            var zmiana = $(this).is(':checked');
+		});
+		$("#checkLed10" || "#front_polygon").click(function () {
+			var zmiana = $(this).is(':checked');
 
-            if (zmiana) {
-                db.update({
-                    led10: true
-                });
-                document.getElementById("front_polygon").classList.add("active");
+			if (zmiana) {
+				db.update({
+					led10: true
+				});
+				document.getElementById("front_polygon").classList.add("active");
 
-            } else {
-                db.update({
-                    led10: false
-                });
-                document.getElementById("front_polygon").classList.remove("active");
-            }
+			} else {
+				db.update({
+					led10: false
+				});
+				document.getElementById("front_polygon").classList.remove("active");
+			}
 
-        });
-        $("#checkLed11" || "#back_path").click(function() {
-            var zmiana = $(this).is(':checked');
+		});
+		$("#checkLed11" || "#back_path").click(function () {
+			var zmiana = $(this).is(':checked');
 
-            if (zmiana) {
-                db.update({
-                    led11: true
-                });
-                document.getElementById("back_path").classList.add("active");
+			if (zmiana) {
+				db.update({
+					led11: true
+				});
+				document.getElementById("back_path").classList.add("active");
 
-            } else {
-                db.update({
-                    led11: false
-                });
-                document.getElementById("back_path").classList.remove("active");
-            }
+			} else {
+				db.update({
+					led11: false
+				});
+				document.getElementById("back_path").classList.remove("active");
+			}
 
-        });
+		});
 
-        $("#myTextBox").on("change paste keyup", function() {
-            db.update({
-                text1: ($(this).val())
-            });
+		$("#myTextBox").on("change paste keyup", function () {
+			db.update({
+				text1: ($(this).val())
+			});
 
-        });
-    </script>
+		});
+	</script>
 </body>
 
 </html>

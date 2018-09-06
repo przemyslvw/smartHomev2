@@ -10,9 +10,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // postcss plugins
 const postcssCssnext = require('postcss-cssnext');
 const precss = require('precss');
+const WebpackShellPlugin = require('webpack-shell-plugin');
 
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 const dirAssets = path.join(__dirname, 'build/styles');
+
 
 module.exports = merge(webpackConfig, {
 
@@ -20,7 +22,8 @@ module.exports = merge(webpackConfig, {
 
     output: {
         path: path.join(__dirname, 'build'),
-        filename: 'scripts/[name].js'
+        filename: 'scripts/[name].js',
+
     },
 
     plugins: [
@@ -29,6 +32,10 @@ module.exports = merge(webpackConfig, {
         new MiniCssExtractPlugin({
             filename: 'styles/[name].css',
             chunkFilename: 'styles/[id].css'
+        }),
+        new WebpackShellPlugin({
+            onBuildStart: ['echo "Webpack Start!!!!!!!!!!!!!!!!!!!!!!!!!!"'],
+            onBuildEnd: ['node build-script.js']
         })
     ],
 
@@ -74,3 +81,5 @@ module.exports = merge(webpackConfig, {
     }
 
 });
+
+// console.log('All good. Go drink a 🍺')

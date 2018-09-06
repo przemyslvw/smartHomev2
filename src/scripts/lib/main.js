@@ -8,3 +8,15 @@ import '../../styles/lib/main.scss';
 console.log('testing message from main.js');
 
 import 'components/nav.js';
+
+
+//react
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.js';
+
+import registerServiceWorker from 'registerServiceWorker.js';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
