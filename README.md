@@ -1,4 +1,4 @@
-# Majrin
+# smartHome v2
 
 
 #### smartHome v2
